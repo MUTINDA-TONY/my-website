@@ -2,13 +2,9 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 60px; /* Adjust for fixed navbar height */
     background-color: #f5f5f5;
     color: #333;
-}
-
-h1, h2, h3 {
-    text-align: center;
 }
 
 /* Navbar Styles */
@@ -48,7 +44,7 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #1abc9c;
     color: white;
     text-align: center;
@@ -56,6 +52,10 @@ h1, h2, h3 {
 
 #welcome-section h1 {
     font-size: 3rem;
+}
+
+#welcome-section p {
+    margin-top: 20px;
 }
 
 /* Projects Section */
