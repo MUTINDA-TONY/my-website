@@ -50,12 +50,34 @@ body {
     text-align: center;
 }
 
+#welcome-section #profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
 #welcome-section h1 {
     font-size: 3rem;
 }
 
 #welcome-section p {
     margin-top: 20px;
+}
+
+/* Personal Details */
+.personal-details {
+    margin-top: 20px;
+}
+
+.personal-details h2 {
+    font-size: 2rem;
+}
+
+.personal-details p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 /* Projects Section */
@@ -132,6 +154,27 @@ body {
     color: #1abc9c;
 }
 
+/* Blog Section */
+#blog {
+    padding: 50px;
+    background-color: #fff;
+}
+
+#blog h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.blog-post {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* Back-to-Top Button */
 #back-to-top {
     position: fixed;
@@ -154,7 +197,7 @@ body {
 
 /* Media Query for Smaller Devices */
 @media (max-width: 768px) {
-    .project-tile {
+    .project-tile, .blog-post {
         width: 90%;
     }
 }
